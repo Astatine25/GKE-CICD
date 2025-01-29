@@ -7,7 +7,7 @@ steps:
   # - 'us-central1-docker.pkg.dev/<your_project_id>/gke-repo/quickstart-image'
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'us-central1-docker.pkg.dev/prj-poc-001-449309/gke-repo/quickstart-image' ]
+  args: ['push', 'us-central1-docker.pkg.dev/prj-poc-001-449309/gke-repo/quickstart-image:latest .' ]
   id: 'Push Docker Image'
 
 - name: 'gcr.io/cloud-builders/docker'
@@ -35,3 +35,4 @@ steps:
 
 options:
   logging: CLOUD_LOGGING_ONLY
+
